@@ -1,0 +1,145 @@
+@import url(font.css);
+@import url(reset.css);
+
+
+
+.main{
+    position:relative;
+}
+.main img{
+    width:100%;
+}
+.main .line{
+    border:2px solid #cfcecc;
+    width:calc(100% - 60px);
+    height:calc(100% + 100px);
+    position:absolute;
+    top:30px;
+    left:30px;
+}
+.main .man, .main .woman{
+    font-size:16px;
+    line-height:1.7;
+    color:#b2aba3;
+}
+.main .man{
+    position:absolute;
+    left:60px;
+    bottom:-104px;
+}
+.main .woman{
+    position:absolute;
+    right:60px;
+    bottom:-104px;
+}
+.main .date{
+    position:absolute;
+    right:calc(50% - 32px);
+    bottom: -70px;
+    font-size:26px;
+    font-family: 'CoreGothicD';
+    color:#495062;
+}
+.main .location{
+    position:absolute;
+    bottom:-90px;
+    left:calc(50% - 55px);
+    font-size:13px;
+    font-family: 'CoreGothicD';
+    color:#495062;
+}
+.sec2{
+    text-align:center;
+    padding-top:230px;
+}
+
+h2{
+    font-size:20px;
+    font-family: 'CoreGothicD';
+    line-height:1.5;
+    margin-bottom:40px;
+    color:#ce8e60;
+    text-align:center;
+}
+.sec2 p{
+    font-size:16px;
+    line-height:1.8;
+    color:#8a8a8a;
+}
+.sec2 .name{
+    margin-top:20px;
+}
+.sec3{
+    text-align:center;
+    padding-top:80px;
+}
+.sec3 img {
+    width: 80%;
+}
+.sec3 hr{
+    border:1px solid #cfcecc;
+    width:70%;
+    margin-top:50px;
+    margin-bottom:40px;
+}
+.sec3 p{
+    font-size: 13px;
+    font-family: 'CoreGothicD';
+    margin-bottom:20px;
+    color:#8a8a8a;
+}
+.sec3 p span{
+    font-size:19px;
+    font-family: 'CoreGothicD';
+    color:#8a8a8a;
+}
+.sec4{
+    padding:80px 0;
+}
+.sec5{
+    background: #eae3d9;
+    padding:90px 0;
+}
+.sec5 .calendar{
+    width:300px;
+    margin:0 auto;
+}
+.sec5 .calendar .month{
+    font-size:20px;
+    text-align:center;
+    margin-bottom:30px;
+    color:#ce8e60;
+}
+.sec5 .calendar .week{
+    display:flex;
+}
+.sec5 .calendar .week span{
+    display:inline-block;
+    width:30px;
+    height:30px;
+    margin:5px;
+    font-size:14px;
+    text-align: center;
+    font-family: 'CoreGothicD';
+    color:#826b59;
+}
+.sec5 .calendar .date{
+    display:flex;
+    flex-wrap: wrap;
+}
+.sec5 .calendar .date span{
+    display:inline-block;
+    width:30px;
+    height:30px;
+    font-size:14px;
+    margin:5px;
+    padding:8px 5px;
+    text-align: center;
+    font-family: 'CoreGothicD';
+    color:#826b59;
+}
+.sec5 .calendar .date span.on{
+    background: #d59360;
+    border-radius: 20px;
+    color:#fff;
+}

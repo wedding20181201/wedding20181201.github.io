@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'noto-regular';
+    font-style:normal;
+    font-weight:400;
+    src: url('../fonts/NotoSans-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'noto-light';
+    font-style:normal;
+    font-weight:400;
+    src: url('../fonts/NotoSansKR-Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'CoreGothicD';
+    font-style:normal;
+    font-weight:400;
+    src: url('../fonts/CoreGothicD-4Regular.woff') format('woff');
+}
