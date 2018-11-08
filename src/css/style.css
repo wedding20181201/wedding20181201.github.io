@@ -147,3 +147,30 @@ h2{
     border-radius: 20px;
     color:#fff;
 }
+.sec5 .info{
+    margin-top:70px;
+    text-align:center;
+}
+.sec5 .info .date{
+    display:inline-block;
+    margin:0 auto;
+    font-size:16px;
+    padding-bottom:5px;
+    border-bottom:1px solid #bf7a44;
+    margin-bottom:20px;
+    color:#bf7a44;
+}
+.sec5 .info .location{
+    font-sie:16px;
+    margin-bottom:10px;
+}
+.sec5 .info .address{
+    font-sie:14px;
+    margin-bottom:20px;
+}
+.sec5 .info .call{
+    font-sie:16px;
+}
+.sec6 .way{
+    margin-top:20px;
+}
