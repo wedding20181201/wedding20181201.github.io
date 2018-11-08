@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/wedding20181201/wedding20181201.github.io#readme",
   "dependencies": {
-    "jquery": "^3.3.1"
+    "jquery": "^3.3.1",
+    "unitegallery": "^1.7.28"
   }
 }
