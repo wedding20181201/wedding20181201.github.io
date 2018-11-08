@@ -59,9 +59,13 @@
                 <div class="date"></div>
             </div>
         </div>
+        <div class="sec6">
+            <div id="map" style="width:500px;height:400px;"></div>
+        </div>
     </div>
 </body>
 <script src="node_modules/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=cd90027111d41db52491c8c3185c2c8e"></script>
 <script src="node_modules/unitegallery/dist/js/unitegallery.js"></script>
 <script src="node_modules/unitegallery/dist/themes/tiles/ug-theme-tiles.js"></script>
 <script>
@@ -81,6 +85,19 @@
         }
 
         $("#gallery").unitegallery();
+
+
+        var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
+        var options = { //지도를 생성할 때 필요한 기본 옵션
+            center: new daum.maps.LatLng(37.4840810697, 127.122680699), //지도의 중심좌표.
+            level: 3 //지도의 레벨(확대, 축소 정도)
+        };
+
+        var map = new daum.maps.Map(container, options); //지도 생성 및 객체 리턴
     });
 </script>
+<script>
+
+</script>
+
 </html>
