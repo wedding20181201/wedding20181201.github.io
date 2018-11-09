@@ -88,11 +88,22 @@ h2{
     font-family: 'CoreGothicD';
     margin-bottom:20px;
     color:#8a8a8a;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
 .sec3 p span{
-    font-size:19px;
+    font-size:17px;
     font-family: 'CoreGothicD';
     color:#8a8a8a;
+}
+.sec3 .icon{
+    display:inline-block;
+    background:url(../images/phone-square.svg) 0 0 no-repeat;
+    width: 28px;
+    height:28px;
+    background-size:100%;
+    margin-left:20px;
 }
 .sec4 .gallery{
     padding:0 20px;
@@ -157,7 +168,7 @@ h2{
     font-size:16px;
     padding-bottom:5px;
     border-bottom:1px solid #bf7a44;
-    margin-bottom:20px;
+    margin-bottom:30px;
     color:#bf7a44;
 }
 .sec5 .info .location{
@@ -166,11 +177,31 @@ h2{
 }
 .sec5 .info .address{
     font-sie:14px;
-    margin-bottom:20px;
+    margin-bottom:12px;
 }
 .sec5 .info .call{
     font-sie:16px;
 }
 .sec6 .way{
-    margin-top:20px;
+    padding:20px 0;
+    background:#ad6f42;
+}
+.sec6 .way > div{
+    margin:25px auto;
+    width:300px;
+
+}
+.sec6 .way span{
+    font-size:16px;
+    display:inline-block;
+    margin-bottom:13px;
+    color:#fff;
+    font-weight:bold;
+    padding-bottom:4px;
+    border-bottom:1px solid #fff;
+}
+.sec6 .way p{
+    font-size:13px;
+    line-height:1.7;
+    color:#fff;
 }
