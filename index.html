@@ -35,26 +35,12 @@
             <h2>PHOTO</h2>
             <div class="gallery">
                 <div id="gallery" style="display: none;">
-                    <img alt="1" src="public/images/main.jpg" data-image="public/images/main.jpg" />
-                    <img alt="2" src="public/images/image01.jpg" data-image="public/images/image01.jpg" />
-                    <img alt="3" src="public/images/image02.jpg" data-image="public/images/image02.jpg" />
-                    <img alt="4" src="public/images/image03.jpg" data-image="public/images/image03.jpg" />
-                    <img alt="5" src="public/images/image04.jpg" data-image="public/images/image04.jpg" />
-                    <img alt="6" src="public/images/image05.jpg" data-image="public/images/image05.jpg" />
-                    <img alt="7" src="public/images/image06.jpg" data-image="public/images/image06.jpg" />
-                    <img alt="8" src="public/images/image07.jpg" data-image="public/images/image07.jpg" />
-                    <img alt="9" src="public/images/image08.jpg" data-image="public/images/image08.jpg" />
-                    <img alt="10" src="public/images/image09.jpg" data-image="public/images/image09.jpg" />
-                    <img alt="11" src="public/images/image10.jpg" data-image="public/images/image10.jpg" />
-                    <img alt="12" src="public/images/image11.jpg" data-image="public/images/image11.jpg" />
-                    <img alt="13" src="public/images/image12.jpg" data-image="public/images/image12.jpg" />
-                    <img alt="14" src="public/images/image13.jpg" data-image="public/images/image13.jpg" />
-                    <img alt="15" src="public/images/image14.jpg" data-image="public/images/image14.jpg" />
-                    <img alt="16" src="public/images/image15.jpg" data-image="public/images/image15.jpg" />
-                    <img alt="17" src="public/images/image16.jpg" data-image="public/images/image16.jpg" />
-                    <img alt="18" src="public/images/image17.jpg" data-image="public/images/image17.jpg" />
+
                 </div>
+                <a class="more" onClick="photoMore();">더보기</a>
+                <a class="fold hide" onClick="photoFold();">접기</a>
             </div>
+
         </div>
         <div class="sec5">
             <div class="calendar">
@@ -124,8 +110,8 @@
 <script src="node_modules/unitegallery/dist/js/unitegallery.js"></script>
 <script src="node_modules/unitegallery/dist/themes/tiles/ug-theme-tiles.js"></script>
 <script>
+    var api;
     $(document).ready(function () {
-        console.log(1);
         var dateSec = $(".calendar .date");
         for(var i =1; i< 7; i++){
             dateSec.append("<span></span>");
@@ -138,8 +124,17 @@
             }
 
         }
+        var images = '';
+        for(var i=1; i < 9; i++){
+            images +=  "<img alt='" + i + "' src='public/images/image" + i + ".jpg' data-image='public/images/image" + i + ".jpg' />";
+        }
 
-        $("#gallery").unitegallery();
+        $("#gallery").append(images);
+
+        api = $("#gallery").unitegallery();
+
+        /*$(".ug-tiles-wrapper").addClass("full");*/
+       $(".ug-tiles-wrapper .ug-tile:gt(7)").addClass('hide');
 
 
         var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
@@ -160,7 +155,34 @@
         // 마커가 지도 위에 표시되도록 설정합니다
         marker.setMap(map);
 
+
     });
+
+    function photoMore(){
+
+        var moreImages = '';
+        for(var i=1; i < 18; i++){
+            moreImages +=  "<img alt='" + i + "' src='public/images/image" + i + ".jpg' data-image='public/images/image" + i + ".jpg' />";
+        }
+
+       $("#gallery").html(moreImages);
+        api = $("#gallery").unitegallery();
+        $(".more").addClass('hide');
+        $(".fold").removeClass('hide');
+    }
+
+    function photoFold() {
+        var initImages = '';
+        for(var i=1; i < 9; i++){
+            initImages +=  "<img alt='" + i + "' src='public/images/image" + i + ".jpg' data-image='public/images/image" + i + ".jpg' />";
+        }
+
+        $("#gallery").html(initImages);
+        api = $("#gallery").unitegallery();
+        $(".more").removeClass('hide');
+        $(".fold").addClass('hide');
+    }
+
 </script>
 <script>
 
