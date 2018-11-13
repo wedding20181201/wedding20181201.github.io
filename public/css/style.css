@@ -84,8 +84,6 @@ h2{
     margin-bottom:40px;
 }
 .sec3 p{
-    font-size: 13px;
-    font-family: 'CoreGothicD';
     margin-bottom:20px;
     color:#8a8a8a;
     display:flex;
@@ -97,13 +95,20 @@ h2{
     font-family: 'CoreGothicD';
     color:#8a8a8a;
 }
+.sec3 p span.small{
+    font-size: 13px;
+    font-family: 'CoreGothicD';
+    color:#8a8a8a;
+    display:inline-block;
+    margin:3px 5px 0 5px;
+}
 .sec3 .icon{
     display:inline-block;
     background:url(../images/phone-square.svg) 0 0 no-repeat;
     width: 28px;
     height:28px;
     background-size:100%;
-    margin-left:20px;
+    margin-left:13px;
     margin-top:-1px;
 }
 .sec4 .gallery{
@@ -225,9 +230,10 @@ h2{
     margin-top:-5px;
 }
 .sec7 .subT{
+    color:#8a8a8a;
     font-size:12px;
     line-height:1.6;
-    margin-bottom:10px;
+    margin-bottom:13px;
 }
 .sec7 .account{
     background:#bf7a44;
