@@ -35,7 +35,14 @@
             <h2>PHOTO</h2>
             <div class="gallery">
                 <div id="gallery" style="display: none;">
-
+                    <img alt="1" src="public/images/image1.jpg" data-image="public/images/image1.jpg" />
+                    <img alt="2" src="public/images/image2.jpg" data-image="public/images/image2.jpg" />
+                    <img alt="3" src="public/images/image3.jpg" data-image="public/images/image3.jpg" />
+                    <img alt="4" src="public/images/image4.jpg" data-image="public/images/image4.jpg" />
+                    <img alt="5" src="public/images/image5.jpg" data-image="public/images/image5.jpg" />
+                    <img alt="6" src="public/images/image6.jpg" data-image="public/images/image6.jpg" />
+                    <img alt="7" src="public/images/image7.jpg" data-image="public/images/image7.jpg" />
+                    <img alt="8" src="public/images/image8.jpg" data-image="public/images/image8.jpg" />
                 </div>
                 <a class="more" onClick="photoMore();">더보기</a>
                 <a class="fold hide" onClick="photoFold();">접기</a>
@@ -124,12 +131,12 @@
             }
 
         }
-        var images = '';
+       /* var images = '';
         for(var i=1; i < 9; i++){
             images +=  "<img alt='" + i + "' src='public/images/image" + i + ".jpg' data-image='public/images/image" + i + ".jpg' />";
         }
 
-        $("#gallery").append(images);
+        $("#gallery").append(images);*/
 
         api = $("#gallery").unitegallery();
 
